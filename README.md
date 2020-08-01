@@ -17,15 +17,15 @@ A sample of the dataset can be seen below.
 
 # Text Pre-processing
 The data has first been pre-processed to reduce noise and build more meaningful features. This has been achieved using the following steps-
-1. Remove hyperlinks and hashtags - Implemented using regular expressions  **INCLUDE SELF CODE LINK HERE** <br>
-2. Remove accented characters - Changed acccented characters to ASCII charcters <br>
-3. Remove punctuation <br>
-4. Remove numbers <br>
-5. Change all the chanracters to lowercase <br>
-6. Stemming- Affixes (prefixes and suffixes) are removed to extract the base words. This stemmed word may or may not be lexicographically correct. This has been done using Porter Stemming. For example- <br>
+1. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L44">Remove hyperlinks and handle names</a> - Implemented using regular expressions<br>
+2. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L54">Remove accented characters</a> - Changed acccented characters to ASCII charcters <br>
+3. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L70>Remove punctuation</a> <br>
+  4. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L81">Remove numbers</a> <br>
+  5. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L65">Change all the chanracters to lowercase</a> <br>
+  6. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L75">Stemming</a> - Affixes (prefixes and suffixes) are removed to extract the base words. This stemmed word may or may not be lexicographically correct. This has been done using Porter Stemming. For example- <br>
 flying --> fly<br>
 beautiful --> beauti<br>
-7. Remove stopwords - Stopwords are the words which has little significance in text understanding. Such as 'a', 'an', and so on. Below is a list of all the stopwords included in nltk for the English language.
+  7. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L91">Remove stopwords</a> - Stopwords are the words which has little significance in text understanding. Such as 'a', 'an', and so on. Below is a list of all the stopwords included in nltk for the English language.
 
 <img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Stopwords.PNG" width = 1000>
 
