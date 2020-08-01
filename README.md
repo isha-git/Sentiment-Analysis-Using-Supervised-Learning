@@ -24,7 +24,7 @@ The data has first been pre-processed to reduce noise and build more meaningful 
 5. Stemming- Affixes (prefixes and suffixes) are removed to extract the base words. This stemmed word may or may not be lexicographically correct. This has been done using Porter Stemming. For example- <br>
 flying --> fly<br>
 beautiful --> beauti<br>
-6. Remove stopwords - Stopwords are the words which has little significance in text understanding. Such as 'a', 'an', and so on. Below is a list of all the stopwords eincluded in nltk for the English language.
+6. Remove stopwords - Stopwords are the words which has little significance in text understanding. Such as 'a', 'an', and so on. Below is a list of all the stopwords included in nltk for the English language.
 
 <img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Stopwords.PNG" width = 1000>
 
@@ -34,10 +34,19 @@ The unstructured text data has to be converted to appropriate features in order 
 2. **Bag of N-Grams** - This is similar to Bag of Words, except that the frequency is calculated for a sequence of words instead of a single word. Here, 'N' represents the number of words in the sequence.<br>
 3. **TF-IDF** (Term Frequency-Inverse Document Frequency) - As the above two methods give more importance to frequency for words, they may give more weightage to frequently occuring words which may not carry much information, such as 'a', and 'the'. On the other hand, words which occur infrequently may carry more information and may serve as more important features. Accordingly, the term frequency (word frequency in each document) is multiplied by the inverse document frequency (inverse of document frequency for each word) to obtain the TF-IDF representation.<br>
 
-# Classification Results
-For classification, we have compared the results between Logistic Regression, Support Vector Machines, and Deep Learning. <br>
-1. **Logistic Regression**
+# Classification using Logistic Regression
+1. **Bag of Words** <br>
+<img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Logistic_BagofWords.PNG" width = 500>
 
+2. **TFIDF** <br>
+<img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Logistic_TFIDF.PNG" width = 500>
+
+# Classification using Support Vector Machine
+1. **Bag of Words** <br>
+<img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Support_BagofWords.PNG" width = 500>
+
+2. **TFIDF** <br>
+<img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Support_TFIDF.PNG" width = 500>
 
 # References
 The <a href = "https://www.apress.com/gp/book/9781484243534">book</a> and <a href = "https://github.com/dipanjanS/text-analytics-with-python">repository</a> provided by Dipanjan Sarkar were followed for this analysis, along with some more resources such as <a href = "https://www.geeksforgeeks.org/text-preprocessing-in-python-set-1/">GeeksforGeeks</a>, Stack Overflow, and the <a href = "https://scikit-learn.org/stable/">sklearn documentation</a>.
