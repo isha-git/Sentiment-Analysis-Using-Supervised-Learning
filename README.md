@@ -20,11 +20,12 @@ The data has first been pre-processed to reduce noise and build more meaningful 
 1. Remove hyperlinks and hashtags - Implemented using regular expressions  **INCLUDE SELF CODE LINK HERE** <br>
 2. Remove accented characters - Changed acccented characters to ASCII charcters <br>
 3. Remove punctuation <br>
-4. Change all the chanracters to lowercase <br>
-5. Stemming- Affixes (prefixes and suffixes) are removed to extract the base words. This stemmed word may or may not be lexicographically correct. This has been done using Porter Stemming. For example- <br>
+4. Remove numbers <br>
+5. Change all the chanracters to lowercase <br>
+6. Stemming- Affixes (prefixes and suffixes) are removed to extract the base words. This stemmed word may or may not be lexicographically correct. This has been done using Porter Stemming. For example- <br>
 flying --> fly<br>
 beautiful --> beauti<br>
-6. Remove stopwords - Stopwords are the words which has little significance in text understanding. Such as 'a', 'an', and so on. Below is a list of all the stopwords included in nltk for the English language.
+7. Remove stopwords - Stopwords are the words which has little significance in text understanding. Such as 'a', 'an', and so on. Below is a list of all the stopwords included in nltk for the English language.
 
 <img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Stopwords.PNG" width = 1000>
 
