@@ -24,7 +24,9 @@ The data has first been pre-processed to reduce noise and build more meaningful 
 5. Stemming- Affixes (prefixes and suffixes) are removed to extract the base words. This stemmed word may or may not be lexicographically correct. This has been done using Porter Stemming. For example- <br>
 flying --> fly<br>
 beautiful --> beauti<br>
-6. Remove stopwords - Stopwords are the words which has little significance in text understanding. Such as 'a', 'an', and so on. **INCLUDE IMAGE OF ALL STOPWORDS**
+6. Remove stopwords - Stopwords are the words which has little significance in text understanding. Such as 'a', 'an', and so on. Below is a list of all the stopwords eincluded in nltk for the English language.
+
+<img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Stopwords.PNG" width = 1000>
 
 # Feature Engineering
 The unstructured text data has to be converted to appropriate features in order to apply machine learning algorithms. Accordingly, we have used<br>
