@@ -32,8 +32,12 @@ beautiful --> beauti<br>
 # Feature Engineering
 The unstructured text data has to be converted to appropriate features in order to apply machine learning algorithms. Accordingly, we have used<br>
 1. **Bag of Words** (1-gram) - The model disregards word order and sequences, and directly represents the frequency of a specific word in each text document.<br>
+<img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/BagofWords.PNG" width = 1000>
+
 2. **Bag of N-Grams** - This is similar to Bag of Words, except that the frequency is calculated for a sequence of words instead of a single word. Here, 'N' represents the number of words in the sequence.<br>
+
 3. **TF-IDF** (Term Frequency-Inverse Document Frequency) - As the above two methods give more importance to frequency for words, they may give more weightage to frequently occuring words which may not carry much information, such as 'a', and 'the'. On the other hand, words which occur infrequently may carry more information and may serve as more important features. Accordingly, the term frequency (word frequency in each document) is multiplied by the inverse document frequency (inverse of document frequency for each word) to obtain the TF-IDF representation.<br>
+<img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/TFIDF.PNG" width = 1000>
 
 # Classification using Logistic Regression
 1. **Bag of Words** <br>
