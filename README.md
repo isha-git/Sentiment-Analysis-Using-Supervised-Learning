@@ -11,7 +11,7 @@ A sample of the dataset can be seen below.
 # Libraries Used
 1. numpy <br>
 2. pandas <br>
-3. nltk <br>
+3. nltk (Natural Language Toolkit)<br>
 4. bs4 <br>
 5. sklearn <br>
 
