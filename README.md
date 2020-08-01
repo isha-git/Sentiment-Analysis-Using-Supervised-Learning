@@ -2,9 +2,11 @@
 Sentiment Analysis (opninion analysis, or opinion mining) is used to predict their sentiment of opinion from textual data, which is usually unstructured text. The output of this analysis is a polarity which is 0 for neutral statements, > 0 for positie statements, and < 0 for negative statements. Here, we have classified sentiments to positive and negative classes using supervised learning. Here, movie reviews have been analysed to predict the sentiment.
 
 **Dataset** <br>
-The movie reviews were from <a href = "https://ai.stanford.edu/~amaas/data/sentiment/">Internet Movie Database (IMDB)</a>, which was originally proposed by  Mass <i>et al.</i> in their paper on <a href="https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf">Learning Word Vectors for Sentiment Analysis</a>. However, here, we have used web curling nand extracted data from a <a href = "https://github.com/dipanjanS/text-analytics-with-python/blob/master/Old-First-Edition/source_code/Ch07_Semantic_and_Sentiment_Analysis/movie_reviews.csv">GitHub repository</a>.
+The movie reviews were from <a href = "https://ai.stanford.edu/~amaas/data/sentiment/">Internet Movie Database (IMDB)</a>, which was originally proposed by  Mass <i>et al.</i> in their paper on <a href="https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf">Learning Word Vectors for Sentiment Analysis</a>, and contains 50000 labelled movie reviews. However, here, we have used web curling nand extracted data from a <a href = "https://github.com/dipanjanS/text-analytics-with-python/blob/master/Old-First-Edition/source_code/Ch07_Semantic_and_Sentiment_Analysis/movie_reviews.csv">GitHub repository</a>. <br>
+<br>
+A sample of the dataset can be seen below.
 
-IMAGE
+<img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Dataset.PNG" width = 500>
 
 # Libraries Used
 1. numpy <br>
@@ -29,6 +31,10 @@ The unstructured text data has to be converted to appropriate features in order 
 1. **Bag of Words** (1-gram) - The model disregards word order and sequences, and directly represents the frequency of a specific word in each text document.<br>
 2. **Bag of N-Grams** - This is similar to Bag of Words, except that the frequency is calculated for a sequence of words instead of a single word. Here, 'N' represents the number of words in the sequence.<br>
 3. **TF-IDF** (Term Frequency-Inverse Document Frequency) - As the above two methods give more importance to frequency for words, they may give more weightage to frequently occuring words which may not carry much information, such as 'a', and 'the'. On the other hand, words which occur infrequently may carry more information and may serve as more important features. Accordingly, the term frequency (word frequency in each document) is multiplied by the inverse document frequency (inverse of document frequency for each word) to obtain the TF-IDF representation.<br>
+
+# Classification Results
+For classification, we have compared the results between Logistic Regression, Support Vector Machines, and Deep Learning. <br>
+1. **Logistic Regression**
 
 
 # References
