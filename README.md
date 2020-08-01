@@ -38,14 +38,14 @@ The unstructured text data has to be converted to appropriate features in order 
 1. **Bag of Words** <br>
 <img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Logistic_BagofWords.PNG" width = 500>
 
-2. **TFIDF** <br>
+2. **TF-IDF** <br>
 <img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Logistic_TFIDF.PNG" width = 500>
 
 # Classification using Support Vector Machine
 1. **Bag of Words** <br>
 <img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Support_BagofWords.PNG" width = 500>
 
-2. **TFIDF** <br>
+2. **TF-IDF** <br>
 <img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Support_TFIDF.PNG" width = 500>
 
 # References
