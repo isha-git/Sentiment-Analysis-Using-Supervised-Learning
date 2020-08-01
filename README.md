@@ -19,7 +19,7 @@ A sample of the dataset can be seen below.
 The data has first been pre-processed to reduce noise and build more meaningful features. This has been achieved using the following steps-
 1. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L44">Remove hyperlinks and handle names</a> - Implemented using regular expressions<br>
 2. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L54">Remove accented characters</a> - Changed acccented characters to ASCII charcters <br>
-3. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L70>Remove punctuation</a> <br>
+3. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L70">Remove punctuation</a> <br>
   4. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L81">Remove numbers</a> <br>
   5. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L65">Change all the chanracters to lowercase</a> <br>
   6. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L75">Stemming</a> - Affixes (prefixes and suffixes) are removed to extract the base words. This stemmed word may or may not be lexicographically correct. This has been done using Porter Stemming. For example- <br>
