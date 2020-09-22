@@ -1,8 +1,9 @@
 # Introduction
-Sentiment Analysis (opninion analysis, or opinion mining) is used to predict their sentiment of opinion from textual data, which is usually unstructured text. The output of this analysis is a polarity which is 0 for neutral statements, > 0 for positive statements, and < 0 for negative statements. Here, we have classified sentiments to positive and negative classes using supervised learning. Here, movie reviews have been analysed to predict the sentiment.
+Sentiment Analysis is used to predict their sentiment of opinion from textual data, which is usually unstructured text. The output of this analysis is a polarity which is 0 for neutral statements, > 0 for positive statements, and < 0 for negative statements. <br>
+Here, we have classified sentiments to positive and negative classes using supervised learning. Movie reviews have been analysed to predict the sentiment.
 
 **Dataset** <br>
-The movie reviews were from <a href = "https://ai.stanford.edu/~amaas/data/sentiment/">Internet Movie Database (IMDB)</a>, which was originally proposed by  Mass <i>et al.</i> in their paper on <a href="https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf">Learning Word Vectors for Sentiment Analysis</a>, and contains 50000 labelled movie reviews. However, here, we have used web curling nand extracted data from a <a href = "https://github.com/dipanjanS/text-analytics-with-python/blob/master/Old-First-Edition/source_code/Ch07_Semantic_and_Sentiment_Analysis/movie_reviews.csv">GitHub repository</a>. <br>
+The movie reviews were from <a href = "https://ai.stanford.edu/~amaas/data/sentiment/">Internet Movie Database (IMDB)</a>, originally proposed by  Mass <i>et al.</i> in their paper on <a href="https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf">Learning Word Vectors for Sentiment Analysis</a>, and contains 50000 labelled movie reviews. Here, we have used web curling and extracted data from a <a href = "https://github.com/dipanjanS/text-analytics-with-python/blob/master/Old-First-Edition/source_code/Ch07_Semantic_and_Sentiment_Analysis/movie_reviews.csv">GitHub repository</a>. <br>
 <br>
 A sample of the dataset can be seen below.
 
@@ -21,11 +22,11 @@ The data has first been pre-processed to reduce noise and build more meaningful 
 2. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L54">Remove accented characters</a> - Changed acccented characters to ASCII charcters <br>
 3. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L70">Remove punctuation</a> <br>
   4. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L81">Remove numbers</a> <br>
-  5. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L65">Change all the chanracters to lowercase</a> <br>
-  6. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L75">Stemming</a> - Affixes (prefixes and suffixes) are removed to extract the base words. This stemmed word may or may not be lexicographically correct. This has been done using Porter Stemming. For example- <br>
+  5. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L65">Change all the characters to lowercase</a> <br>
+  6. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L75">Stemming</a> - Affixes are removed to extract the base words. This stemmed word may or may not be lexicographically correct. This has been done using Porter Stemming. For example- <br>
 flying --> fly<br>
 beautiful --> beauti<br>
-  7. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L91">Remove stopwords</a> - Stopwords are the words which has little significance in text understanding. Such as 'a', 'an', and so on. Below is a list of all the stopwords included in nltk for the English language.
+  7. <a href = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/codes/sentiment_Analysis_BagofWords.py#L91">Remove stopwords</a> - Stopwords are the words which has little significance in text understanding, such as 'a', 'an', and so on. Below is a list of all the stopwords included in nltk for the English language.
 
 <img src = "https://github.com/isha-git/Sentiment-Analysis-Using-Supervised-Learning/blob/master/images/Stopwords.PNG" width = 1000>
 
